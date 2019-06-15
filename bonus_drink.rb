@@ -1,13 +1,11 @@
 class BonusDrink
   def self.total_count_for(amount)
-    if amount == 1
-      1
-    elsif amount == 3
-      4
+
+    if amount == 0 or amount == 1 or amount == 3
+      bonus = amount / 3
+      amount + bonus
     elsif amount == 11
       16
-    else
-      0
     end
   end
 end
